@@ -14,7 +14,7 @@ app.listen(8888);
 const url = 'http://localhost:8888/index.html';
 
 describe('Mortgage Calculator', function () {
-  this.timeout(6500);
+  this.timeout(8500);
   this.slow(3000);
 
   it('returns the correct status code', () => axios.get(url)
@@ -47,7 +47,7 @@ describe('Mortgage Calculator', function () {
         .then(input => expect(input).to.exist)
     );
 
-    it('should have an input element with the name of "term"', () =>
+    it ('should have an input element with the name of "term"', () =>
       pageObject
         .evaluate(() => document.querySelector('select[name=term]'))
         .then(input => expect(input).to.exist)
