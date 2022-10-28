@@ -1,14 +1,18 @@
 {
-  "name": "origin-react-starter",
+  "name": "mortgage-calculator",
   "version": "0.1.0",
-  "description": "Base application setup for creating a new react project.",
+  "description": "Mortgage Calculator App.",
   "main": "server/index.js",
   "scripts": {
     "build": "npm run less && webpack --mode development",
-    "start": "npm run build && node server/index.js",
+    "start": "node server/index.js",
     "less": "lessc src/css/style.less dist/css/style.css",
     "lint": "eslint .",
     "test": "npm run build && mocha test/.setup.js test/*.spec.js --exit"
+  },
+  "engines": {
+    "node": "14.x.x",
+    "npm": "6.14.15"
   },
   "dependencies": {
     "axios": "^0.16.1",
