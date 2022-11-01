@@ -45,6 +45,12 @@ export default class App extends Component {
     }
   
   render() {
+    let output;
+    if(this.state.mPay == ""){
+      output = `your monthly payment will display here`
+    } else {
+      output = `$${this.state.mPay} is your monthly payment`
+    }
     return (
       <div className="container">
           <h3>Mortgage Calculator</h3>
@@ -83,7 +89,7 @@ export default class App extends Component {
           </form>
 
             <div className="col-sm-offset-4 col-sm-4" id="output">
-              <b>${this.state.mPay}</b> is your payment
+              {output}
             </div>
       </div>
     );
