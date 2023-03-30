@@ -1,7 +1,7 @@
 {
   "name": "mortgage-calculator",
   "version": "0.1.0",
-  "description": "Mortgage Calculator App.",
+  "description": "Mortgage Calculator App",
   "main": "server/index.js",
   "scripts": {
     "build": "npm run less && webpack --mode development",
