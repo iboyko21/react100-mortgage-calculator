@@ -31,8 +31,8 @@ export default class App extends Component {
                     
       this.setState({
         mPay: result
-      })
-    }
+      });
+    };
 
     handleReset() {
       this.setState({
@@ -41,14 +41,14 @@ export default class App extends Component {
         term: 15,
         mPay: ""
       })
-    }
+    };
   
   render() {
     let output;
     if(this.state.mPay == ""){
-      output = `your monthly payment will display here`
+      output = `your monthly payment will display here`;
     } else {
-      output = `$${this.state.mPay} is your monthly payment`
+      output = `$${this.state.mPay} is your monthly payment`;
     }
     return (
       <div className="container">
